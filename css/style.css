@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'voto';
+    src: url(../fonts/VotoSerifGX.ttf);
+    /* width 50-130, weight 28-194, optical size 12-72 */
+}
+
+body{
+    background: #D0D1CC;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #D3C6B4;
+}
+
+li{
+    list-style: none;
+}
+
+input[type=text]{
+    width: 30%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #D3C6B4;
+    font-family: 'voto';
+    font-weight: 100;
+    font-size: 12px;
+    color: #D3C6B4;
+    background-color: #3A3837;
+    outline: none;
+    transition: 0.4s;
+}
+
+input[type=text]:focus {
+    box-shadow: 0 4px 10px #D3C6B4;
+}
+
+.container{
+    padding-top: 80px;
+}
+
+.navigator {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.nav{
+    width: 100%;
+    height: 80px;
+    background: #151312;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    /* border-bottom: #D3C6B4 solid 2px; */
+}
+
+.nav .main{
+    font-family: 'voto';
+    width: 130;
+    font-weight: 194;
+    font-optical-sizing: 12;
+    font-size: 40px;
+    order: 1;
+}
+
+.nav .navwords{
+    font-family: 'voto';
+    width: 100;
+    font-weight: 120;
+    font-optical-sizing: 72;
+    font-size: 20px;
+    order: 2;
+}
+
+.nav .box, .boxer{
+    padding: 20px;
+}
+
+.nav .box{
+    position: relative;
+    display: inline-block;
+}
+
+.nav .box:hover{
+    background: black;
+    border-radius: 20% 20% 0 0;
+}
+
+.nav .box:hover .dropdown{
+    display: block;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    background: black;
+    opacity: 0.6;
+    border: black solid 2px;
+    border-radius: 0 0 20% 20%;
+    min-width: 150px;
+    padding: 10px 20px;
+    z-index: 1;
+    top: 100%;
+    left: 0%;
+}
+
+.dropdown a{
+    padding: 10px 10px;
+}
+
+.footer{
+    width: 100%;
+    height: fit-content;
+    background: #A5A89B;
+    order: 10;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer .info, .footer .moreinfo .footerinfo{
+    background: #3A3837;
+}
+
+.footer .moreinfo{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    gap: 10px;
+}
+
+.footer .footerinfo{
+    padding: 16px;
+    line-height: 20px;
+    color: #D3C6B4;
+    font-family: 'voto';
+    font-weight: 100;
+    font-optical-sizing: 72;
+    font-size: 12px;
+}
+.footer .footerinfo li{
+    margin-bottom: 10px;
+}
+
+.footer .footerinfo h4{
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer .footerinfo h5{
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.footer .footerinfo h6{
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.footer .footerinfo .additional{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer .footerinfo .additional .signup{
+    width: 120px;
+    height: 30px;
+    border-radius: 12px;
+    background: #D3C6B4;
+    position: relative;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: 0.4s;
+}
+
+.footer .footerinfo .additional .signup::after{
+    content: "Sign Up";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #3A3837;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer .footerinfo .additional .signup:hover{
+    box-shadow: 0 4px 10px #D3C6B4;
+    cursor: pointer;
+}
+
+.footer .footerinfo .additional .signup:active{
+    box-shadow: inset 0 4px 10px #151312;
+}
+
+.footer .footerinfo .additional .right, .footer .footerinfo .additional .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+    font-size: 8px;
+    flex-grow: 1;
+}
+
+.footer .footerinfo .additional .right{
+    align-items: baseline;
+}
+
+.footer .footerinfo .additional .right .socials:hover{
+    cursor: pointer;
+}
+
+.welcome{
+    background-color: #151312;
+    background-image: url(../images/welcomeimage.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 78vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    font-size: 48px;
+    color: whitesmoke;
+    font-family: 'voto';
+    font-weight: 194;
+    font-optical-sizing: 12;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.welcome h1{
+    opacity: 0;
+    animation: zeroed 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    text-shadow: #151312 1px 3px;
+}
+
+@keyframes zeroed{
+    0% {transform: translatey(-15%); opacity: 0;}
+    100% {transform: translatey(0); opacity: 1;}
+}
+
+.nomineeforward{
+    opacity: 0;
+    animation: fadein 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    background: #151312;
+    border: whitesmoke 2px solid;
+    border-radius: 20px;
+    height: 40px;
+    width: 10%;
+    padding: 16px;
+    color: whitesmoke;
+    font-family: 'voto';
+    font-weight: 120;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes fadein{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.splide{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.splide__slide{
+    position: relative;
+}
+
+.splide__slide img {
+    object-fit: cover;
+    width: 75vw;
+    height: 100vh;
+    display: block;
+    margin: auto;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    width: 75vw;
+    max-width: calc(100% - 20px);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    box-sizing: border-box;
+    z-index: 10;
+    overflow-wrap: break-word;
+}
+.header{
+
+}
+
+.best{
+    
+}
+
+.bestie{
+
+}
+
+.image{
+
+}
+
+.video{
+
+}

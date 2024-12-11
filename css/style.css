@@ -9,6 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    overflow: auto;
 }
 
 a{
@@ -95,25 +96,29 @@ input[type=text]:focus {
 }
 
 .nav .box:hover .dropdown{
-    display: block;
+    display: grid;
+    gap: 10px;
 }
 
-.dropdown{
+.nav .dropdown{
     display: none;
     position: absolute;
-    background: black;
-    opacity: 0.6;
+    background: rgba(0, 0, 0, 0.8);
     border: black solid 2px;
     border-radius: 0 0 20% 20%;
     min-width: 150px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     z-index: 1;
     top: 100%;
     left: 0%;
 }
 
 .dropdown a{
-    padding: 10px 10px;
+    /* background: blue; */ /* only for visibility of the anchor tags*/
+}
+
+.dropdown a:hover{
+    text-decoration-line: underline; /* looks better with it */
 }
 
 .footer{
@@ -256,7 +261,7 @@ input[type=text]:focus {
     100% {transform: translatey(0); opacity: 1;}
 }
 
-.nomineeforward{
+a .nomineeforward{
     opacity: 0;
     animation: fadein 3s;
     animation-delay: 2s;
@@ -264,7 +269,8 @@ input[type=text]:focus {
     background: #151312;
     border: whitesmoke 2px solid;
     border-radius: 20px;
-    height: 40px;
+    height: 20px;
+    min-width: 150px;
     width: 10%;
     padding: 16px;
     color: whitesmoke;
@@ -275,6 +281,16 @@ input[type=text]:focus {
     justify-content: center;
     align-items: center;
     text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+a .nomineeforward:hover{
+    box-shadow: 0 4px 20px #D3C6B4;
+}
+
+a .nomineeforward:active{
+    box-shadow: inset 0 4px 20px #A5A89B;
 }
 
 @keyframes fadein{
@@ -321,6 +337,75 @@ input[type=text]:focus {
     z-index: 10;
     overflow-wrap: break-word;
 }
+
+
+.dateinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #151312;
+}
+
+.dateinfo h1{
+    font-family: 'voto';
+    font-weight: 194;
+    font-size: 32px;
+
+}
+
+.dateinfo .photo{
+    width: 75vw;
+    height: 65vh;
+    overflow: hidden;
+}
+
+.dateinfo .photo img{
+    object-fit: cover;
+    width: 75vw;
+    height: 65vh;
+    display: block;
+    margin: auto;
+}
+
+.dateinfo .announcement{
+    font-family: 'voto';
+    font-weight: 48;
+    font-size: 14px;
+}
+
+.dateinfo .following, .dateinfo .ending{
+    font-family: 'voto';
+    font-weight: 98;
+    font-size: 16px;
+}
+
+.dateinfo .keydates{
+    display: grid;
+    width: 70vw;
+    grid-template-columns: 4fr 1fr 2fr;
+    grid-template-rows: repeat(15, 1fr);
+    gap: 10px;
+    box-sizing: border-box;
+    font-family: 'voto';
+    font-weight: 68;
+    font-size: 14px;
+    justify-items: start;
+    /* border: solid 1px black; */
+}
+
+.dateinfo .keydates .headers{
+    font-weight: 108;
+}
+
+.dateinfo .ending{
+    font-size: 14px;
+}
+
+.dateinfo, .dateinfo h1, .dateinfo .photo, .dateinfo .announcement, .dateinfo .following, .dateinfo .keydates, .dateinfo .ending{
+    margin: 2vh 6vw;
+}
+
+
 .header{
 
 }

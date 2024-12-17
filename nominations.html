@@ -30,23 +30,33 @@
 						<li><a class="navwords" href="#">Awards</a>
 							<div class="dropdown">
 								<a href="nominations.html">Nominees</a>
-								<a href="#">Example</a>
+								<a href="#">Oscars</a>
+								<a href="#">Governors</a>
+								<a href="#">Student Academy</a>
+								<a href="#">Scientific and Technical</a>
 							</div>
 						</li>
 					</div>
 					<div class="box">
 						<li><a class="navwords" href="#">Collection</a>
 							<div class="dropdown">
-								<a href="#">Example</a>
-								<a href="#">Example</a>
+								<a href="#">Academy Museum</a>
+								<a href="#">Academy Film Archive</a>
+								<a href="#">Academy Library</a>
+								<a href="#">Academy Collection</a>
 							</div>
 						</li>
 					</div>
 					<div class="box">
 						<li><a class="navwords" href="#">Learn</a>
 							<div class="dropdown">
-								<a href="#">Example</a>
-								<a href="#">Example</a>
+								<a href="#">Gold Rising</a>
+								<a href="#">Nicholl Fellowships</a>
+								<a href="#">Fellowship for Women</a>
+								<a href="#">Academy Museum Education Program</a>
+								<a href="#">Accessibility</a>
+								<a href="#">Sustainability</a>
+								<a href="#">Alumni Program</a>
 							</div>
 						</li>
 					</div>
@@ -54,59 +64,426 @@
 						<li><a class="navwords" href="#">News</a>
 							<div class="dropdown">
 								<a href="keydates.html">Key Dates</a>
-								<a href="#">Example</a>
+								<a href="#">News and Updates</a>
 							</div>
 						</li>
 					</div>
 					<div class="box">
 						<li><a class="navwords" href="#">Shop</a>
 							<div class="dropdown">
-								<a href="#">Example</a>
-								<a href="#">Example</a>
+								<a href="#">Academy100</a>
+								<a href="#">Make a Gift to the Museum</a>
+								<a href="#">Make a Gift to the Academy Foundation</a>
+								<a href="#">Become a Museum Member</a>
+								<a href="#">Academy Museum Store</a>
+								<a href="#">Rental Info</a>
 							</div>
 						</li>
 					</div>
 				</ul>
 			</section>
 
-            <h2 class="header">Nominees</h2>
-
+            <h2 class="header">Nominees of 2023</h2>
+            <div class="viewanchor"><a class="viewmore" href="keydates.html">View More Info Here</a></div>
             <section class="nominations">
                 <div class="best">
-                    <h3 class="bestie">Best Picture</h3>
-                    <div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div>
+                    <div class="holder" onclick="toggleCheck(this)"><h3 class="bestie">Best Picture</h3><div class="vote"></div></div>
+                    <section id="carousel-best-picture" class="splide" aria-label="Best Pictures">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/oppenheimer.jpg" alt=""><div class="slide-text">Oppenheimer</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/barbie.jpg" alt=""><div class="slide-text">Barbie</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/killersofflowermoon.jpg" alt=""><div class="slide-text">Killers of Flower Moon</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/poorthings.jpeg" alt=""><div class="slide-text">Poor Things</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/anatomyofafall.jpeg" alt=""><div class="slide-text">Anatomy of a Fall</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/theholdovers.jpeg" alt=""><div class="slide-text">The Holdovers</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/americanfiction.jpeg" alt=""><div class="slide-text">American Fiction</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/maestro.jpeg" alt=""><div class="slide-text">Maestro</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/pastlives.jpeg" alt=""><div class="slide-text">Past Lives</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/thezoneofinterest.jpeg" alt=""><div class="slide-text">The Zone of Interest</div>
+                            </li>
+                          </ul>
+                        </div>
+                    </section>
+                      
+                      <ul id="thumbnails-best-picture" class="thumbnails">
+                        <li class="thumbnail">
+                          <img src="./images/oppenheimer.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/barbie.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/killersofflowermoon.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/poorthings.jpeg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/anatomyofafall.jpeg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/theholdovers.jpeg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/americanfiction.jpeg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/maestro.jpeg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/pastlives.jpeg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/thezoneofinterest.jpeg" alt="">
+                        </li>
+                      </ul>
                 </div>
                 <div class="best">
-                    <h3 class="bestie">Best Director</h3>
-                    <div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div>
+                    <div class="holder" onclick="toggleCheck(this)"><h3 class="bestie">Best Director</h3><div class="vote"></div></div>
+                    <section id="carousel-best-director" class="splide" aria-label="Best Directors">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/christophernolan.jpeg" alt=""><div class="slide-text">Christopher Nolan (Oppenheimer)
+                            </div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/yorgoslanthimos.webp" alt=""><div class="slide-text">Yorgos Lanthimos (Poor Things)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/martinscorsese.jpg" alt=""><div class="slide-text">Martin Scorsese (Killers of the Flower Moon)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/jonathanglazer.jpg" alt=""><div class="slide-text">Jonathan Glazer (The Zone of Interest)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/justinetriet.jpg" alt=""><div class="slide-text">Justine Triet (Anatomy of a Fall)</div>
+                            </li>
+                          </ul>
+                        </div>
+                    </section>
+                      
+                      <ul id="thumbnails-best-director" class="thumbnails">
+                        <li class="thumbnail">
+                          <img src="./images/christophernolan.jpeg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/yorgoslanthimos.webp" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/martinscorsese.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/jonathanglazer.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/justinetriet.jpg" alt="">
+                        </li>
+                      </ul>
                 </div>
                 <div class="best">
-                    <h3 class="bestie">Best Actor</h3>
-                    <div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div>
+                    <div class="holder" onclick="toggleCheck(this)"><h3 class="bestie">Best Actor</h3><div class="vote"></div></div>
+                    <section id="carousel-best-actor" class="splide" aria-label="My Awesome Gallery">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/cillianmurphy.jpg" alt=""><div class="slide-text">Cillian Murphy (Oppenheimer)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/bradleycooper.jpg" alt=""><div class="slide-text">Bradley Cooper (Maestro)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/paulgiamatti.jpg" alt=""><div class="slide-text">Paul Giamatti (The Holdovers)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/colmandomingo.jpg" alt=""><div class="slide-text">Colman Domingo (Rustin)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/jeffreywright.webp" alt=""><div class="slide-text">Jeffrey Wright (American Fiction)</div>
+                            </li>
+                          </ul>
+                        </div>
+                    </section>
+                      
+                      <ul id="thumbnails-best-actor" class="thumbnails">
+                        <li class="thumbnail">
+                          <img src="./images/cillianmurphy.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/bradleycooper.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/paulgiamatti.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/colmandomingo.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/jeffreywright.webp" alt="">
+                        </li>
+                      </ul>
                 </div>
                 <div class="best">
-                    <h3 class="bestie">Best Actress</h3>
-                    <div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div>
+                    <div class="holder" onclick="toggleCheck(this)"><h3 class="bestie">Best Actress</h3><div class="vote"></div></div>
+                    <section id="carousel-best-actress" class="splide" aria-label="My Awesome Gallery">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/emmastone.jpg" alt=""><div class="slide-text">Emma Stone (Poor Things)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/lilygladstone.webp" alt=""><div class="slide-text">Lily Gladstone (Killers of the Flower Moon)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/careymulligan.jpg" alt=""><div class="slide-text">Carey Mulligan (Maestro)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/sandrahuller.jpg" alt=""><div class="slide-text">Sandra Hüller (Anatomy of a Fall)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/annetebening.jpg" alt=""><div class="slide-text">Annette Bening (Nyad)</div>
+                            </li>
+                          </ul>
+                        </div>
+                    </section>
+                      
+                      <ul id="thumbnails-best-actress" class="thumbnails">
+                        <li class="thumbnail">
+                          <img src="./images/emmastone.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/lilygladstone.webp" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/careymulligan.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/sandrahuller.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/annetebening.jpg" alt="">
+                        </li>
+                      </ul>
                 </div>
                 <div class="best">
-                    <h3 class="bestie">Best Supporting Actor</h3>
-                    <div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div>
+                    <div class="holder" onclick="toggleCheck(this)"><h3 class="bestie">Best Supporting Actor</h3><div class="vote"></div></div>
+                    <section id="carousel-best-supporting-actor" class="splide" aria-label="My Awesome Gallery">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/rdj.jpg" alt=""><div class="slide-text">Robert Downey Jr. (Oppenheimer)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/robertdeniro.jpg" alt=""><div class="slide-text">Robert De Niro (Killers of the Flower Moon)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/ryangosling.jpg" alt=""><div class="slide-text">Ryan Gosling (Barbie)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/skb.jpg" alt=""><div class="slide-text">Sterling K. Brown (American Fiction)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/markruffalo.jpg" alt=""><div class="slide-text">Mark Ruffalo (Poor Things)
+                            </div>
+                            </li>
+                          </ul>
+                        </div>
+                    </section>
+                      
+                      <ul id="thumbnails-best-supporting-actor" class="thumbnails">
+                        <li class="thumbnail">
+                          <img src="./images/rdj.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/robertdeniro.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/ryangosling.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/skb.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/markruffalo.jpg" alt="">
+                        </li>
+                      </ul>
                 </div>
                 <div class="best">
-                    <h3 class="bestie">Best Supporting Actress</h3>
-                    <div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div>
+                    <div class="holder" onclick="toggleCheck(this)"><h3 class="bestie">Best Supporting Actress</h3><div class="vote"></div></div>
+                    <section id="carousel-best-supporting-actress" class="splide" aria-label="My Awesome Gallery">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/emilyblunt.jpg" alt=""><div class="slide-text">Emily Blunt (Oppenheimer)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/americaferrera.jpg" alt=""><div class="slide-text">America Ferrera (Barbie)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/jodiefoster.jpg" alt=""><div class="slide-text">Jodie Foster (Nyad)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/daniellebrooks.jpg" alt=""><div class="slide-text">Danielle Brooks (The Color Purple)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/davine.jpg" alt=""><div class="slide-text">Da'Vine Joy Randolph (The Holdovers)
+                            </div>
+                            </li>
+                          </ul>
+                        </div>
+                    </section>
+                      
+                      <ul id="thumbnails-best-supporting-actress" class="thumbnails">
+                        <li class="thumbnail">
+                          <img src="./images/emilyblunt.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/americaferrera.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/jodiefoster.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/daniellebrooks.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/davine.jpg" alt="">
+                        </li>
+                      </ul>
                 </div>
                 <div class="best">
-                    <h3 class="bestie">Best Animated Feature</h3>
-                    <div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div>
+                    <div class="holder" onclick="toggleCheck(this)"><h3 class="bestie">Best Animated Feature</h3><div class="vote"></div></div>
+                    <section id="carousel-best-animated-feature" class="splide" aria-label="My Awesome Gallery">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/smats.jpg" alt=""><div class="slide-text">Spider-Man: Across the Spider-Verse</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/tbath.jpg" alt=""><div class="slide-text">The Boy and the Heron</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/elemental.jpg" alt=""><div class="slide-text">Elemental</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/nimona.png" alt=""><div class="slide-text">Nimona</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/robotdreams.jpg" alt=""><div class="slide-text">Robot Dreams</div>
+                            </li>
+                          </ul>
+                        </div>
+                    </section>
+                      
+                      <ul id="thumbnails-best-animated-feature" class="thumbnails">
+                        <li class="thumbnail">
+                          <img src="./images/smats.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/tbath.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/elemental.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/nimona.png" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/robotdreams.jpg" alt="">
+                        </li>
+                      </ul>
                 </div>
                 <div class="best">
-                    <h3 class="bestie">Best International Feature</h3>
-                    <div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div><div class="image" href=""></div>
+                    <div class="holder" onclick="toggleCheck(this)"><h3 class="bestie">Best International Feature</h3><div class="vote"></div></div>
+                    <section id="carousel-best-international-feature" class="splide" aria-label="My Awesome Gallery">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/tzoi.jpg" alt=""><div class="slide-text">The Zone of Interest (UK)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/locapitano.jpg" alt=""><div class="slide-text">Io Capitano (Italy)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/perfectdays.jpg" alt=""><div class="slide-text">Perfect Days (Japan)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/sots.jpg" alt=""><div class="slide-text">Society of the Snow (Spain)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/ttl.jpg" alt=""><div class="slide-text">The Teacher's Lounge (Germany)</div>
+                            </li>
+                          </ul>
+                        </div>
+                    </section>
+                      
+                      <ul id="best-international-feature" class="thumbnails">
+                        <li class="thumbnail">
+                          <img src="./images/tzoi.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/locapitano.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/perfectdays.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/sots.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/ttl.jpg" alt="">
+                        </li>
+                      </ul>
                 </div>
                 <div class="best">
-                    <h3 class="bestie">Best Original Song</h3>
-                    <div class="video" href=""></div><div class="video" href=""></div><div class="video" href=""></div><div class="video" href=""></div><div class="video" href=""></div>
+                    <div class="holder" onclick="toggleCheck(this)"><h3 class="bestie">Best Original Song</h3><div class="vote"></div></div>
+                    <section id="carousel-best-original-song" class="splide" aria-label="My Awesome Gallery">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/ijustken.jpg" alt=""><div class="slide-text">"I'm Just Ken" (Barbie)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/wwimf.png" alt=""><div class="slide-text">"What Was I Made For?" (Barbie)</div>
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/wahzhazhe.webp" alt=""><div class="slide-text">"Wahzhazhe" (Killers of the Flower Moon)</div>
+                            </li>
+                          </ul>
+                        </div>
+                    </section>
+                      
+                      <ul id="thumbnails-best-original-song" class="thumbnails">
+                        <li class="thumbnail">
+                          <img src="./images/ijustken.jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/wwimf.png".jpg" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="./images/wahzhazhe.webp" alt="">
+                        </li>
+                      </ul>
                 </div>
             </section>
 

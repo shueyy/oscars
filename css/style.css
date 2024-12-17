@@ -312,7 +312,7 @@ a .nomineeforward:active{
     position: relative;
 }
 
-.splide__slide img {
+.intro .splide__slide img{
     object-fit: cover;
     width: 75vw;
     height: 100vh;
@@ -320,14 +320,13 @@ a .nomineeforward:active{
     margin: auto;
 }
 
-.slide-text {
+.slide-text{
     position: absolute;
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
     width: 75vw;
-    max-width: calc(100% - 20px);
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
     font-size: 18px;
@@ -336,6 +335,8 @@ a .nomineeforward:active{
     box-sizing: border-box;
     z-index: 10;
     overflow-wrap: break-word;
+    font-family: 'voto';
+    font-weight: 100;
 }
 
 
@@ -346,11 +347,11 @@ a .nomineeforward:active{
     color: #151312;
 }
 
-.dateinfo h1{
+.dateinfo h1, .header{
     font-family: 'voto';
     font-weight: 194;
     font-size: 32px;
-
+    padding-top: 2vh;
 }
 
 .dateinfo .photo{
@@ -401,27 +402,153 @@ a .nomineeforward:active{
     font-size: 14px;
 }
 
-.dateinfo, .dateinfo h1, .dateinfo .photo, .dateinfo .announcement, .dateinfo .following, .dateinfo .keydates, .dateinfo .ending{
-    margin: 2vh 6vw;
+.dateinfo *:not(.keydates *){ /*makes sure the text within the grid does not use the margin, but everything else does. there was a way.*/
+    margin: 3vh 6vw 3vh 6vw;
 }
-
 
 .header{
-
+    font-size: 48px;
+    text-align: center;
+    padding-top: 6vh;
 }
 
-.best{
+.viewanchor{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.viewanchor .viewmore{
+    color: #3A3837;
+    text-decoration: none;
+    font-family: 'voto';
+    font-size: 12px;
+    font-weight: 72;
+    text-align: center;
+}
+
+.viewmore:hover{
+    text-decoration: underline;
+}
+
+.nominations{
+    margin: 4vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". bestie ."
+        ". .splide .";
+}
+
+.nominations .best .holder{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    border: solid #151312 1px;
+    margin-top: 10px;
+}
+
+.nominations .best .holder .bestie{
+    font-family: 'voto';
+    color: #151312;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.nominations .best .holder .vote{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #151312;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nominations .best .holder.checked .vote::before{
+    content: '✔';
+    transition: content 0.3s;
+}
+
+.nominations .best .vote::before{
+    content: '^';
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: content 0.3s;
+}
+
+.nominations .best .vote:active{
+    box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.best .splide{
+    width: 100%;
+    height: 40vh;
+    max-height: 40vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.splide__slide img{
+    width: 60%;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    object-fit: contain;
+}
+
+.thumbnails{
+    display: flex;
+    margin: 1rem auto 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.thumbnail{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0.2rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    display: block;
     
 }
 
-.bestie{
-
-}
-
-.image{
-
-}
-
-.video{
-
+.best .slide-text{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    width: 20vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1;
+    overflow-wrap: break-word;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    font-family: 'voto';
+    font-weight: 100;
 }
